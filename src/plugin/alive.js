@@ -12,7 +12,7 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
 
-  const uptimeMessage = `*👨‍💻ＭＡＳＴＥＲ-ＭＤ-Ｖ3 ＩＳ ＡＬＩＶＥ👨‍💻*
+  const uptimeMessage = `*👨‍💻MR RASH ＩＳ ＡＬＩＶＥ👨‍💻*
 _________________________________________
 
 *📆 Day: ${days} Day*
@@ -52,7 +52,7 @@ _________________________________________
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "© 𝐂ʀᴇᴀᴛᴇᴅ 𝐁ʏ 𝐌ʀ 𝐒ᴀʜᴀɴ 𝐎ꜰᴄ"
+            text: "© MR RASH MD"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
@@ -69,7 +69,7 @@ _________________________________________
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363249960769123@newsletter',
-                  newsletterName: "MASTER-MD-V3",
+                  newsletterName: "MR-RASH-ND",
                   serverMessageId: 143
                 }
               }
