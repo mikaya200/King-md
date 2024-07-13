@@ -1,10 +1,10 @@
 {
-  "name": "👨‍💻ＭＡＳＴＥＲ-ＭＤ-Ｖ3👨‍💻",
-  "description": "Master Md WhatsApp user bot created by mr sahan ofc.",
+  "name": "👨‍💻RASH - MD - BOT👨‍💻",
+  "description": "Rash Md WhatsApp user bot created by mr RAAH ofc.",
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/MrMasterOfc/MASTER-MD-V3",
+  "repository": "https://github.com/mikaya200/King-md",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
