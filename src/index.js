@@ -57,7 +57,7 @@ if (!fs.existsSync(credsPath)) {
         console.log('Please add your session to SESSION_ID env !!');
         process.exit(1); 
     }
-    const sessdata = config.SESSION_ID.split("MASTER-MD&")[1];
+    const sessdata = config.SESSION_ID.split("RASH-MD&")[1];
     const url = `https://pastebin.com/raw/${sessdata}`;
     console.log(sessdata);
     axios.get(url)
@@ -80,12 +80,12 @@ const PORT = process.env.PORT || 5000;
 async function connectToWA() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/');
     const { version, isLatest } = await fetchLatestBaileysVersion();
-    console.log(`🔰 MASTER-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+    console.log(`🔰 RASH-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
     const Matrix = makeWASocket({
         version,
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ["MASTER-MD-V3", "safari", "3.3"],
+        browser: ["RASH-MD-V1", "safari", "3.3"],
         auth: state,
         getMessage: async (key) => {
             if (store) {
@@ -93,7 +93,7 @@ async function connectToWA() {
                 return msg.message || undefined;
             }
             return {
-                conversation: "MASTER-MD IS POWERFUL WHATSAPP BOT"
+                conversation: "RADH-MD IS POWERFUL WHATSAPP BOT"
             };
         }
     });
@@ -107,7 +107,7 @@ async function connectToWA() {
         } else if (connection === 'open') {
             if (initialConnection) {
                 console.log(chalk.green("🔰 Connected Successfull Dear ✅"));
-                Matrix.sendMessage(Matrix.user.id, { text: ` *👨‍💻MASTER-MD-V3 IS CONNECTED👨‍💻* ` });
+                Matrix.sendMessage(Matrix.user.id, { text: ` *👨‍💻RASH-MD-V1 IS CONNECTED👨‍💻* ` });
                 initialConnection = false;
             } else {
                 console.log(chalk.blue("♻️ Connection reestablished after restart."));
@@ -146,7 +146,7 @@ async function connectToWA() {
 }
 
 app.get("/", (req, res) => {
-res.send("*MASTER-MD WhatsApp Bot Working successfully..!*");
+res.send("*RASH-MD WhatsApp Bot Working successfully..!*");
 });
 app.listen(PORT, () => console.log(`Server listening on port http://localhost:${PORT}`));
 setTimeout(() => {
