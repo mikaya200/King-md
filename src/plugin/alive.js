@@ -19,7 +19,7 @@ _________________________________________
 *🕰️Hour: ${hours} Hour*
 *⏳ Minute: ${minutes} Minute*
 *⏲️ Second: ${seconds} Second*
-*👨‍💻Developer: MASTER MIND*
+*👨‍💻Developer: MR RASH*
 _________________________________________
 `;
 
