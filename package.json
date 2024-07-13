@@ -1,16 +1,16 @@
 {
-  "name": "MASTER-MD",
+  "name": "RASH-MD",
   "version": "10.8.1",
-  "description": "Master md whatsApp user bot created by mr sahan ofc",
+  "description": "Rash md whatsApp user bot created by mr rash ofc",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start src/index.js --deep-monitoring --attach --name MASTER-MD",
+    "start": "pm2 start src/index.js --deep-monitoring --attach --name RASH-MD",
     "stop": "pm2 stop MASTER-MD",
-    "restart": "pm2 restart MASTER-MD"
+    "restart": "pm2 restart RASH-MD"
   },
-  "keywords": ["master-md", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Sahan_Pedaa",
+  "keywords": ["rash-md", "whatsapp-bot", "whatsapp md bot"],
+  "author": "mikaya_mr",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
